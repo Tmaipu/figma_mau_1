@@ -1,88 +1,48 @@
-/*
- * Basic CSS Reset
- * Loại bỏ các định dạng mặc định của trình duyệt
- * và đảm bảo tính nhất quán giữa các trình duyệt.
- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Thiết lập box-sizing toàn cục */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-/* Loại bỏ padding và margin mặc định */
-body,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, li,
-figure, figcaption,
-hr,
-dl, dt, dd {
-  margin: 0;
-  padding: 0;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-/* Đảm bảo ảnh, video, và các thành phần khác không bị tràn ra ngoài */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* Loại bỏ gạch chân của link và các kiểu mặc định khác */
-a {
-  text-decoration: none;
-  color: inherit; /* Kế thừa màu chữ từ phần tử cha */
-}
-
-/* Thiết lập font-size cho các thẻ tiêu đề (heading) để dễ dàng quản lý sau này */
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/* Thiết lập kiểu dáng cơ bản cho body */
 body {
-  min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1;
 }
-
-/* Cài đặt cơ bản cho các input, button, select, và textarea */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+ol, ul {
+	list-style: none;
 }
-
-/* Đảm bảo các form elements kế thừa thuộc tính font từ body */
-button,
-input[type="submit"],
-input[type="reset"] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+blockquote, q {
+	quotes: none;
 }
-
-/* Loại bỏ kiểu dáng mặc định của list */
-ul, ol {
-  list-style: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-/* Đảm bảo rằng textarea có thể resize mà không làm hỏng bố cục */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Loại bỏ hiệu ứng nhấn mặc định trên các thiết bị di động */
-button {
-  -webkit-tap-highlight-color: transparent;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
